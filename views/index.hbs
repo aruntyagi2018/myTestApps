@@ -1,0 +1,13 @@
+<table>
+{{#each employees}}
+   <tr>
+     <td style="width:100px">{{first}}</td>
+     <td style="width:150px">{{name}}</td>
+     <td style="width:100px">{{profession}}</td>
+     <td><a id="detail" href="empDetail/{{empId}}">detail</a> </td>
+   </tr>
+{{/each}}
+</table>
+
+
+<div><a id="create" href="../create">create</a> </div>

@@ -1,0 +1,93 @@
+body {
+/* background-color:#FFDEAD; */
+}
+h1
+{
+color:teal;
+margin-left:30px;
+}
+.bigbutton {
+height:40px;
+color: white;
+background-color:teal;
+margin-left:150px;
+margin-top:50px;
+padding:15 15 25 15;
+font-size:18px;
+}
+.main-logo
+{
+  height: 70px;
+  width: 80px;
+}
+/* Padding clear */
+.pw0 {
+  padding-left: 0px !important; 
+  padding-right: 0px !important;  
+}
+.ph0 {
+  padding-top: 0px !important; 
+  padding-bottom: 0px !important;  
+}
+.pa0 {
+  padding: 0px !important; 
+}
+
+
+/*input label animation*/
+.label-animation {
+  margin-top: 30px; 
+}
+.label-animation label.helper-label {
+  position: absolute;
+  margin-top: -30px;
+  z-index: -1;
+  color: #414141;
+}
+.label-animation input {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+.label-animation input:focus ,
+.label-animation input:active,
+.label-animation select:focus ,
+.label-animation select:active {
+   box-shadow:4px 4px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.label-animation input:focus + label.helper-label,
+.label-animation input:active + label.helper-label,
+.label-animation select:focus + label.helper-label,
+.label-animation select:active + label.helper-label {
+  z-index: 0;
+  margin-top: -70px;
+  margin-left: 0px;
+  animation-name: showLabel;
+  animation-duration: .4s;
+}
+.label-animation input:focus::-webkit-input-placeholder { color:transparent; }
+.label-animation input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.label-animation input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.label-animation input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+.label-animation input::-webkit-input-placeholder { text-align:center; }
+.label-animation input:-moz-placeholder { text-align:center;}
+.label-animation input::-moz-placeholder { text-align:center;} 
+.label-animation input:-ms-input-placeholder { text-align:center; }   
+
+.label-animation label {
+  width: 100%;
+  left: 0px;
+}
+@keyframes showLabel {
+  0%   {
+      margin-top: -30px; 
+      z-index: 0;
+      margin-left: 0px;
+  }
+  100% {
+      margin-top: -70px;
+      margin-left: 0px;
+      z-index: 0;
+  }
+}

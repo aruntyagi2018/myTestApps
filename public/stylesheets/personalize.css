@@ -1,0 +1,176 @@
+/* footer block */
+.footer-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #f5f5f5;
+}
+
+/* search block */
+.search-block {
+    margin-top: 50px; 
+}
+.search-block .card {
+    border: none;
+}
+
+.search-block form img {
+    display: none;
+}
+.search-block.loading form img  {
+    display: block;
+}
+.search-block.loading form button {
+    display: none;
+}
+
+/* header block */
+nav 
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.HeaderBlock {
+    border-bottom: 1px solid #f5f5f5;
+}
+nav input:focus::-webkit-input-placeholder { color:#05549f; }
+nav input:focus:-moz-placeholder { color:#05549f; } /* FF 4-18 */
+nav input:focus::-moz-placeholder { color:#05549f; } /* FF 19+ */
+nav input:focus:-ms-input-placeholder { color:#05549f; } /* IE 10+ */
+nav .input-group-btn {
+    background-color: #f0f7fe;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    margin-left: 150px;
+    height: 36px;
+}
+
+nav input.form-control {
+    width: 0px !important;
+    position: absolute !important;
+    z-index: -1 !important;
+    opacity: 0 !important;
+}
+nav .input-group-btn img:hover {
+    cursor: pointer;
+}
+nav input.form-control:active, nav input.form-control:focus,  nav input.form-control:hover,  nav .input-group-btn img:hover + input {
+    width: 150px !important;
+    position: absolute !important;
+    z-index: 0 !important;
+    opacity: 1 !important;
+    margin-left: -149px;
+}
+
+.navbar-brand img {
+    border-radius: 50%; 
+}
+
+@media (max-width: 575px) { 
+     .container {
+        padding-left: 0px; 
+        padding-right: 0px; 
+    }
+}
+@media (min-width: 576px) { 
+    .container {
+        padding-left: 0px; 
+        padding-right: 0px; 
+    }
+}
+
+@media (min-width: 768px) { 
+}
+@media (min-width: 992px) { 
+}
+@media (min-width: 1200px) { 
+}
+
+#LoginBlock .form-check-label{
+    color: #414141;;
+} 
+#LoginBlock button {
+    background-color: #05549f; 
+}
+#resultsBlock > .col {
+    margin-top: 20px; 
+}
+.error-message {
+    display: none;
+}
+.error .error-message {
+    background-color: #fff0f1;
+    display: block;
+    color: #f6303f;
+}
+/*results block*/
+#resultsBlock {
+    margin-bottom: 50px; 
+    
+}
+#resultsBlock p.name {
+    color: #414141;
+}
+#resultsBlock p.price {
+    color: #000000;
+}
+#resultsBlock .price {
+    font-weight: bold;
+}
+#resultsBlock .card {
+    margin-top: 30px; 
+}
+
+#resultsBlock .remove-favourites {
+    display: none; 
+}
+#resultsBlock .favourite .remove-favourites {
+    display: block; 
+}
+#resultsBlock .favourite .add-favourites {
+    display: none; 
+}
+#resultsBlock .favourite .card {
+    background-image: url(../images/star.svg);
+    background-position-x: 95%;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+/* loadingBlock */
+.loadingBlock {
+    display: none;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: url(../images/ajax-loader.gif) center 45% no-repeat #000;
+}
+.loadingBlock .message {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.loadingBlock.show {
+    display: block;
+}
+
+/* filterBlock */
+.filterBlock {
+    margin-top: 0px; 
+}
+.filterBlock .card {
+    border: none;
+}

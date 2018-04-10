@@ -1,0 +1,56 @@
+<div class="loadingBlock"><div class="message">Getting your albums</div>
+</div>
+<div class="container">
+                        <div class="search-block row">
+                            <div class="mr-auto mx-auto col col-md-10 col-lg-8">
+                                <div class="text-center card">
+                                    <div class="card-body">
+                                        <img src="/images/my_tunes_logo.jpg" alt="logo"/>
+                                            <form class="">
+                                                <div class="label-animation  form-group">
+                                                    <input type="text" name="artist" id="Artist" placeholder="Search for your favourite artists" value="" class="form-control form-control">
+                                                    <label for="Artist" class="font-italic helper-label  form-control-label">Search for your favourite artists</label>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary">Get albums</button><img src="" class="mr-auto mx-auto" alt="loading">
+                                            </form>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+    <div id="resultsBlock" class="row">
+   </div>
+</div>
+<script id="book-detail-templete" type="x-handlebars-template">
+    \{{#each this}}
+    <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col col-sm-4">
+                          <img src="\{{artworkUrl100}}" class="img-thumbnail" alt="Card cap">
+                          </div>
+                          <div class="col col-sm-8">
+                              <p class="price text-left text-truncate" title="\{{collectionArtistName}}">\{{collectionArtistName}}</p>
+                              <p class="name text-left">\{{currency}} \{{collectionPrice}}</p>
+                          </div></div>
+                          <div class="card-text text-truncate" title="\{{collectionName}}">\{{collectionName}}</div>
+                          <div class="row"><div class="col col-sm-4">
+                            <a class="badge badge-primary" href="\{{collectionViewUrl}}" target="_blank">View details</a>
+                            </div>
+                            <div class="add-favourites col col-sm-8"><a class="badge badge-success add-fav" href="#" id="\{{trackId}}">Add to favourites</a>
+                            </div>
+                            <div class="remove-favourites col col-sm-8">
+                                <a class="badge badge-danger" href="#814424794" id="814424794">
+                                    No more my favourite</a>
+                            </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>  
+    \{{/each}}
+    
+ </script>
+
+    
+
+ 
