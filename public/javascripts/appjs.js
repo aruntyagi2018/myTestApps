@@ -25,7 +25,7 @@ $('.add-fav').click(function(){
   var favItemid = $(this).attr('id')
 $.ajax({
 
-url: 'http://localhost:3000/mtunes/addfav/' + favItemid,
+url: '/mtunes/addfav/' + favItemid,
 type: 'GET',
 success : function(data) {
  // alert($obj);
@@ -43,7 +43,7 @@ $('.remove-fav').click(function(){
   alert(favItemid);
 $.ajax({
 
-url: 'http://localhost:3000/mtunes/removefav/' + favItemid,
+url: '/mtunes/removefav/' + favItemid,
 type: 'GET',
 success : function(data) {
  // alert($obj);
