@@ -3,7 +3,7 @@ $(function(){
         var searchItem= $('#Artist').val();
   $.ajax({
 
-    url: 'http://localhost:3000/mtunes/search/' + searchItem,
+    url: '/mtunes/search/' + searchItem,
     type: 'GET',
     success : function(data) {
         var jsondata = JSON.stringify(data[0]);
